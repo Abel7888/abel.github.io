@@ -1,0 +1,29 @@
+:root{
+  --lg: 16px;
+  --xxl: 32px;
+}
+.client-name {
+  font-weight: 500;
+}
+.client-properties .client-property {
+  padding: 0 var(--lg) 0 0;
+  font-weight: 400;
+}
+.client-properties .client-property:last-child {
+  padding: 0;
+}
+.client-properties .client-property-alert {
+  color: red;
+}
+.client-options, .client-options:hover {
+  height: var(--xxl);
+  width: var(--xxl);
+  top: 9px;
+}
+.client-options {
+  transition: transform 250ms ease;
+}
+.client-options.collapsed {
+  transition: transform 250ms ease;
+  transform: rotate(180deg);
+}

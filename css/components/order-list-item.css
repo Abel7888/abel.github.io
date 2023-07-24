@@ -1,0 +1,18 @@
+.order-details {
+  padding-right: var(--lg);
+}
+.order-date, .order-price {
+  margin-bottom: var(--sm);
+}
+.component-full.order {
+  margin-bottom: var(--sm);
+}
+.client-header {
+  margin-top: var(--xxl);
+}
+.client-header p {
+  margin-bottom: var(--xs);
+}
+#main {
+  background-color: var(--white);
+}

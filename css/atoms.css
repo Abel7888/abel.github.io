@@ -1,0 +1,308 @@
+
+:root {
+  --white: white;
+  --red: #f31e1e;
+  --red-pale: rgba(243, 30, 30, 0.15);
+  --orange: #f99400;
+  --orange-pale: rgba(249, 148, 0, 0.15);
+  --blue: #2f80ed;
+  --blue-pale: rgba(47, 128, 237, 0.15);
+  --green: #219653;
+  --green-pale: rgba(33, 150, 83, 0.15);
+  --gray-2: #4f4f4f;
+  --gray-3: #828282;
+  --gray-4: #bdbdbd;
+  --gray-5: #e0e0e0;
+  --gray-6: #f2f2f2;
+  --black: black;
+  --xs: 4px;
+  --sm: 8px;
+  --md: 12px;
+  --lg: 16px;
+  --bg: 18px;
+  --xxl: 32px;
+}
+.badge {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+[class*="badge-"] {
+  border-radius: var(--md);
+  width: fit-content;
+  height: fit-content;
+  padding: 1px var(--sm);
+  display: inline-block;
+}
+.badge-red {
+  color: var(--white);
+  background-color: var(--red);
+}
+.badge-red-pale {
+  color: var(--red);
+  background: var(--red-pale);
+}
+.badge-orange {
+  color: var(--white);
+  background-color: var(--orange);
+}
+.badge-orange-pale {
+  color: var(--orange);
+  background: var(--orange-pale);
+}
+.badge-blue {
+  color: var(--white);
+  background-color: var(--blue);
+}
+.badge-blue-pale {
+  color: var(--blue);
+  background: var(--blue-pale);
+}
+.badge-green {
+  background-color: var(--green);
+  color: var(--white);
+}
+.badge-green-pale {
+  color: var(--green);
+  background: var(--green-pale);
+}
+.filter-badge {
+  padding: 5px var(--lg);
+  display: inline-block;
+  margin-right: var(--xs);
+  background-color: var(--white);
+  color: var(--gray-3);
+  transition: all 0.25s;
+}
+.filter-badge:hover {
+  color: var(--black);
+}
+.filter-badge.selected {
+  background-color: var(--gray-2);
+  color: var(--white);
+}
+.filter-badge.selected:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+.btn {
+  font-size: unset;
+  line-height: 22px;
+  font-weight: 700;
+  background-color: var(--gray-2);
+  color: var(--gray-6);
+  border: none;
+  padding-left: var(--lg);
+  padding-right: var(--lg);
+}
+.btn:hover,
+.btn.light {
+  background-color: var(--gray-5);
+  color: var(--gray-2);
+}
+.btn span{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.btn.light:hover {
+  background-color: var(--gray-2);
+  color: var(--gray-6);
+}
+.btn-xs {
+  padding: 1px var(--sm);
+  font-weight: 400;
+}
+.btn-sm {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.btn-md {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.btn-lg {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.btn-xs.light {
+  background-color: var(--white);
+  color: var(--gray-3);
+  border: 1px solid var(--white);
+}
+.btn-xs.ghost {
+  background-color: var(--no-color);
+  color: var(--gray-2);
+  border: 1px solid var(--gray-2);
+}
+.btn-xs.ghost.light {
+  background-color: var(--no-color);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.btn-xs.ghost:hover {
+  background-color: var(--no-color);
+  color: var(--white);
+}
+.btn-xs.ghost.light:hover {
+  background-color: var(--white);
+  color: var(--gray-2);
+}
+.btn-rounded-sm {
+  color: var(--gray-6);
+  background-color: var(--gray-2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: var(--bg);
+  font-weight: 400;
+}
+.btn-rounded-sm.light {
+  color: var(--gray-3);
+  background-color: var(--gray-5);
+}
+.btn-rounded-sm:hover path {
+  stroke: var(--gray-2);
+}
+.btn-rounded-sm.light:hover path,
+.btn-rounded-close:hover path {
+  stroke: var(--gray-6);
+}
+.btn-rounded-sm.light:hover {
+  color: var(--gray-6);
+}
+.btn-page {
+  background-color: var(--gray-5);
+  color: var(--black);
+  height: var(--xxl);
+  width: var(--xxl);
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  border-radius: var(--xs);
+  margin-right: var(--md);
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn-page.active {
+  background-color: var(--gray-2);
+  color: var(--white);
+}
+.btn-page.icon {
+  padding: 0;
+}
+.btn-page.icon:hover path {
+  stroke: var(--white);
+}
+.btn-page.last {
+  margin-right: 0;
+}
+.btn-page:hover {
+  background-color: var(--gray-2);
+  color: var(--white);
+}
+.btn-page.active:hover {
+  background-color: var(--gray-5);
+  color: var(--black);
+}
+.btn-rounded-close {
+  padding: 5px;
+  border-radius: 18px;
+}
+input,
+select {
+  color: var(--gray-3);
+  border: 1px solid var(--gray-5);
+}
+input:hover,
+select:hover {
+  border: 1px solid var(--gray-4);
+}
+input:focus,
+select:focus {
+  color: var(--gray-2);
+  border: 1px solid var(--gray-3) !important;
+}
+input:focus::placeholder,
+select:focus::placeholder {
+  color: var(--gray-2);
+  opacity: 1; /* Firefox */
+}
+input:invalid,
+select:invalid {
+  border: 1px solid var(--red);
+}
+.switch {
+  height: 40px;
+  border-radius: 20px;
+  padding: var(--xs) 6px;
+}
+.switch .active,
+a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.switch .active {
+  border-radius: var(--lg);
+  background-color: var(--white);
+}
+.switch a {
+  border-radius: var(--lg);
+}
+.switch a:hover {
+  color: var(--gray-2);
+}
+/*SWITCH SLIDER start*/
+.tab-slider--nav {
+  width: 100%;
+  float: left;
+  margin-bottom: var(--lg);
+  font-weight: 500;
+}
+.tab-slider--tabs {
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: var(--xs) 0px;
+  list-style: none;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 40px;
+  user-select: none;
+  background: var(--gray-6);
+}
+.tab-slider--tabs:after {
+  content: "";
+  width: 50%;
+  height: var(--xxl);
+  background: var(--white);
+  position: absolute;
+  top: var(--xs);
+  left: 6px;
+  transition: all 250ms ease-in-out;
+  border-radius: var(--lg);
+}
+.tab-slider--tabs.slide:after {
+  left: calc(50% - 6px);
+}
+.tab-slider--trigger {
+  width: 50%;
+  color: var(--gray-3);
+  text-align: center;
+  padding: 5px var(--lg);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 250ms ease-in-out;
+  user-select: none;
+}
+.tab-slider--trigger.active {
+  color: var(--gray-2);
+}
+/*SWITCH SLIDER end*/
+
+#clientListItemCollapse .accordion-body {
+  padding-top: var(--xxl);
+}

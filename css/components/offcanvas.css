@@ -1,0 +1,29 @@
+.offcanvas.with-footer {
+  margin-bottom: 59px;
+}
+.offcanvas-header, .cat-heading {
+  padding-bottom: var(--xxl);
+}
+.offcanvas-title {
+  color: var(--black);
+}
+.offcanvas .tab-slider--nav {
+  margin-bottom: var(--xl);
+}
+.cat-link, .cat-link-icon {
+  padding: var(--md) 0;
+  border-bottom: 1px solid var(--gray-6);
+}
+.cat-link:hover, .cat-link-icon:hover {
+  color: var(--gray-2);
+}
+.cat-link-icon {
+  padding-top: var(--sm);
+  padding-bottom: var(--sm);
+}
+.left-icon {
+  margin-right: var(--sm);
+}
+.offcanvas {
+  transition: none;
+}
