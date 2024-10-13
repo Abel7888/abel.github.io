@@ -4,123 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Data Shield Partners</title>
+    <title>Contact Us - Data Shield Partners</title>
   </head>
   <body>
     <header>
       <div class="logo">Data Shield Partners</div>
-      <div class="toggle"></div>
       <div class="navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="work.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="social-bar">
-          <ul>
-            <li>
-              <a href="https://facebook.com">
-                <img src="images/facebook.png" target="_blank" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com">
-                <img src="images/twitter.png" target="_blank" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com">
-                <img src="images/instagram.png" target="_blank" alt="" />
-              </a>
-            </li>
-          </ul>
-          <a href="mailto:Abel@datashieldpartners.com" class="email-icon">
-            <img src="images/email.png" alt="" />
-          </a>
-        </div>
       </div>
     </header>
 
     <section>
       <div class="title">
-        <h1>Contact us</h1>
+        <h1>Contact Us</h1>
         <p>
-          At Data Shield Partners, we help MedTech and healthcare companies shine 
-          by showcasing emerging technologies. Ready to elevate your brand? Let’s connect and make your innovations stand out!
+          At Data Shield Partners, we help MedTech and healthcare companies shine by showcasing emerging technologies. Ready to elevate your brand? Let’s connect and make your innovations stand out!
         </p>
       </div>
-       <div class="contact">
-  <div class="contact-form">
-    <form action="https://formspree.io/f/mjkvvgng" method="POST">
-      <div class="row">
-        <div class="input50">
-          <label for="fname">First Name:</label>
-          <input type="text" id="fname" name="first_name" placeholder="First Name" required />
+      
+      <!-- Flex container for the form and contact info -->
+      <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+        <!-- Contact Form -->
+        <div style="width: 48%;">
+          <form action="https://formspree.io/f/mjkvvgng" method="POST">
+            <div style="display: flex; gap: 10px;">
+              <div style="width: 50%;">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="first_name" placeholder="First Name" required style="width: 100%;" />
+              </div>
+              <div style="width: 50%;">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="last_name" placeholder="Last Name" required style="width: 100%;" />
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px; margin-top: 10px;">
+              <div style="width: 50%;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required style="width: 100%;" />
+              </div>
+              <div style="width: 50%;">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required style="width: 100%;" />
+              </div>
+            </div>
+            <div style="margin-top: 10px;">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Message" required style="width: 100%; height: 100px;"></textarea>
+            </div>
+            <div style="margin-top: 10px;">
+              <input type="submit" value="Send" style="width: 100%;" />
+            </div>
+          </form>
         </div>
-        <div class="input50">
-          <label for="lname">Last name:</label>
-          <input type="text" id="lname" name="last_name" placeholder="Last Name" required />
-        </div>
-      </div>
-      <div class="row">
-        <div class="input50">
-          <label for="Email">Email:</label>
-          <input type="email" id="Email" name="email" placeholder="Email" required />
-        </div>
-        <div class="input50">
-          <label for="Subject">Subject:</label>
-          <input type="text" id="Subject" name="subject" placeholder="Subject" required />
-        </div>
-      </div>
-      <div class="row">
-        <div class="input100">
-          <label for="Message">Message:</label>
-          <textarea id="Message" name="message" placeholder="Message" required></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input100">
-          <input type="submit" value="Send" />
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-<div class="contact-info">
-          <div class="info-box">
-            <img src="images/address.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Address</h4>
-              <p>4901 Seminary Rd, Alexadria, VA USA</p>
+
+        <!-- Contact Info -->
+        <div style="width: 48%;">
+          <div style="margin-bottom: 20px; display: flex; align-items: center;">
+            <img src="images/address.png" alt="Address" style="width: 24px;" />
+            <div style="margin-left: 10px;">
+              <h4 style="margin: 0;">Address</h4>
+              <p style="margin: 0;">4901 Seminary Rd, Alexandria, VA USA</p>
             </div>
           </div>
-          <div class="info-box">
-            <img src="images/email.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Email</h4>
-              <a href="mailto:Abel@datashieldpartners.com">Abel@datashieldpartners.com</a>
-              <a href="mailto:Abelassefa19@gmail.com">Abelassefa19@gmail.com</a>
+
+          <div style="margin-bottom: 20px; display: flex; align-items: center;">
+            <img src="images/email.png" alt="Email" style="width: 24px;" />
+            <div style="margin-left: 10px;">
+              <h4 style="margin: 0;">Email</h4>
+              <a href="mailto:Abel@datashieldpartners.com" style="text-decoration: none; color: black;">Abel@datashieldpartners.com</a><br />
+              <a href="mailto:Abelassefa19@gmail.com" style="text-decoration: none; color: black;">Abelassefa19@gmail.com</a>
             </div>
           </div>
-          <div class="info-box">
-            <img src="images/call.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Cell</h4>
-              <a href="Cell:+19785555555">1 571 251 2195</a>
+
+          <div style="display: flex; align-items: center;">
+            <img src="images/call.png" alt="Call" style="width: 24px;" />
+            <div style="margin-left: 10px;">
+              <h4 style="margin: 0;">Cell</h4>
+              <a href="tel:+15712512195" style="text-decoration: none; color: black;">+1 571 251 2195</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
-
-     
-
-      
-
-      
